@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fab22e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.card{
+    width: 80vmin;
+    padding: 4rem 3rem;
+    height: 60vh;
+    background: #15161a;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card P{
+    padding: 3rem 0;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+
+span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: #fab22e;
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    background: #fab22e;
+    color: #171721;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+}
+
