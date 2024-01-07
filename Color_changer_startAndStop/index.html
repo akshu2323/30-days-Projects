@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: #fff;
+            text-align: center;
+        }
+
+        button{
+            background-color: #fff;
+            color: #212121;
+            padding: 0.5rem 2rem;
+            font-size: 1.5rem;
+            margin-left: 1rem;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text">
+        Click Start To Change Background Color Every Second
+    </h1>
+
+    <button class="start">Start</button>
+    <button class="stop">Stop</button>
+
+    <script>
+        let body = document.querySelector('body');
+        let startBtn = document.querySelector('.start');
+        let stopBtn = document.querySelector('.stop');
+        let intervalid;
+
+        function colorChanger(){
+            let red = parseInt(Math.random()*256);
+            let green = parseInt(Math.random()*256);
+            let blue = parseInt(Math.random()*256);
+
+            body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+        };
+
+        startBtn.addEventListener('click', ()=>{
+            if (!intervalid) {
+                intervalid = setInterval(colorChanger, 1000)
+            }
+        });
+
+        stopBtn.addEventListener('click', ()=>{
+            clearInterval(intervalid);
+            intervalid = null;
+        })
+    </script>
+</body>
+</html>
