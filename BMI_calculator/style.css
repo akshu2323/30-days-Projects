@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color:#212121; */
+    /* color: #fff; */
+    font-family: sans-serif;
+}
+
+.container{
+    height: 90vh;
+    /* width: 100vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+h1{
+    height: 10vh;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+#bmi-guide{
+    text-align: center;
+}
+
+#green{
+    color: green;
+}
+
+#red{
+    color: red;
+}
+
+#yellow{
+    color: yellowgreen;
+}
+
+input{
+    outline: none;
+    padding: 0.3rem 0.5rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+button{
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    padding: 0.5rem 0.5rem;
+    width: 50%;
+    margin: 1rem 5rem;
+    cursor: pointer;
+}
+
+#result{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
